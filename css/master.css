@@ -176,7 +176,8 @@ nav ul li a:hover {
     border-bottom: #ffd122 solid 1px;
     color: #ffd122;
 }
-nav .menu { 
+
+nav .menu {
     display: none;
 }
 
@@ -186,13 +187,14 @@ nav .menu {
         height: 0;
         width: 0;
     }
-    nav .menu { 
+
+    nav .menu {
         display: block;
         font-size: 30px;
         width: 50px;
-        height :50px;
+        height: 50px;
     }
-    
+
     nav .small {
         display: flex;
         flex-direction: column;
@@ -264,7 +266,9 @@ nav .menu {
 }
 
 @media (max-width:767px) {
+
     .landing .text {
+
         width: 100%;
     }
 
