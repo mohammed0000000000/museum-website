@@ -16,7 +16,9 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
 }
-
+body::-webkit-scrollbar{
+    display: none;
+}
 ul {
     list-style: none;
 }
@@ -35,7 +37,7 @@ a {
 /* Specail Heading */
 .specail-heading {
     margin: 30px auto 30px;
-    padding: 15px;
+    padding: 15px 0;
     text-align: center;
     position: relative;
 }
@@ -48,7 +50,7 @@ a {
     width: fit-content;
     margin: auto;
     position: relative;
-    padding: 10px;
+    padding: 10px 0px;
 }
 
 .specail-heading h2::after {
@@ -101,7 +103,7 @@ a {
 /* medium */
 @media (min-width:992px) {
     .container {
-        max-width: 970px;
+        min-width: 970px;
     }
 }
 
@@ -137,7 +139,7 @@ header .container .togal {
     align-items: center;
 }
 
-.fa-solid {
+.menu{
     display: none;
     font-size: 25px;
     color: var(--main-color);
@@ -212,10 +214,6 @@ nav .menu {
     nav .small li a {
         padding: 0 10px 15px
     }
-
-    .fa-solid {
-        display: block;
-    }
 }
 
 /* Home */
@@ -280,6 +278,61 @@ nav .menu {
         text-align: center;
         margin: auto;
     }
+}
+
+/* start gallery section */
+
+/* .gallary .container{
+    padding:0;
+    margin:0;
+} */
+.gallary .container .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    padding:0;
+    max-width: 100%;
+}
+@media(max-width:768px){
+.gallary .container .boxes {
+    grid-template-columns: repeat(auto-fill,min-max(250px, 1fr));
+
+}
+}
+.gallary .container .boxes .box {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    position:relative; 
+}
+.gallary .container .boxes .box img{ 
+    max-height: 50%;
+    width:100%;
+}
+.gallary .container .boxes .box .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 1.3;
+    padding: 10px;
+}
+.gallary .container .boxes .box .text p{
+    position:absolute;
+    width:100%;
+    height: 100%;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    padding:30px;
+    transition:2s;
+    background-color:var(--main-color);
+    opacity:0;
+    overflow-y: hidden;
+}
+.gallary .container .boxes .box .text p.show{
+    opacity: 1;
+}
+
+.gallary .container .boxes .image img {
+    width: 100%;
 }
 
 /* Vedio */
