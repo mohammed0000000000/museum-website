@@ -8,13 +8,60 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+header{
+    width: fit-content;
+}
+
+.header-background{
+    background-color: #DBDBDB;
+    padding: 0 7% 0 7%;
+    width: fit-content;
+}
+
+header nav h2{
+    color: #D0B333;
+    padding-left: 4%;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
 header .logo img{
     width: 80px;
 }
 
-header .header-container {
-    display: flex;  
+.header-container {
+    display: flex; 
+    padding-right: 10px;
 }
+
+.header-container ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.header-container li a{
+    display: block;
+    padding: 15px 0 15px 7%;
+}
+
+.header-container h1{
+    color: #D0B333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .container{
     text-align: center;
