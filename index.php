@@ -138,7 +138,7 @@
                     <p><i class="fa-sharp fa-solid fa-location-pin"></i>Tahrir Square,Downlown,Cairo -Egypt</p>
                     <p><i class="fa-solid fa-phone"></i>+20 225 796 948</p>
                     <P><i class="fa-solid fa-envelope"></i><a href="">egyptionmuseum@moanlig.gov.eg</a></P>
-                    <img src="images/banner-egypt-monuments.jpg" alt="" srcset="">
+                    <img src="image/banner-egypt-monuments.jpg" alt="" srcset="">
                 </div>
                 <div class="box contact">
                     <h2>ONLINE INQUIRY</h2>
@@ -159,7 +159,7 @@
     <footer>
         <div class="container">
             <div class="box">
-                <img src="images/logo-egy-ministry-of-Tourism-antiquities-00-1.png" alt="" srcset="">
+                <img src="image/logo-egy-ministry-of-Tourism-antiquities-00-1.png" alt="" srcset="">
             </div>
             <div class="box">
                 <img src="images/logo-egyptian-museum-cairo.png" alt="" srcset="">
