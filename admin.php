@@ -190,8 +190,8 @@
                             <label for="exhibitionDate"><strong>Exhibition Date</strong></label>
                             <input type="date" name="ModifyExhibitionDate" required>
                         </div>
-                        <?php include 'php/modifyExhibitionFunc.php';
-                        echo $message;?>
+                        <?php 
+                        echo $ModifyEx;?>
                         <button type="submit"><strong>MODIFY EXHIBITION</strong></button>
                     </div>
                 </form>

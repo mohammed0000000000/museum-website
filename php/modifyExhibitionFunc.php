@@ -1,5 +1,5 @@
 <?php 
-$message = '';
+$ModifyEx = '';
 if (isset($_POST['ModifyExhibitionID'])){
     $name = $_POST['ModifyExhibitionName'];
     $info = $_POST['ModifyExhibitionInfo'];
@@ -14,9 +14,9 @@ if (isset($_POST['ModifyExhibitionID'])){
     $stmt = mysqli_prepare($theConnection, $modifyExhibition); 
     mysqli_stmt_execute($stmt);
     if(mysqli_stmt_affected_rows($stmt) == 0){
-        $message = '<script> alert("incorrect ID or values unchanged");</script>'; 
+        $ModifyEx = '<script> alert("incorrect ID or values unchanged");</script>'; 
     }else{
-        $message = '<script> alert("Exhibition Updated Successfully");</script>'; 
+        $ModifyEx = '<script> alert("Exhibition Updated Successfully");</script>'; 
     }
 }   
 ?>
