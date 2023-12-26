@@ -59,7 +59,7 @@
         <br>
         <div class="addItem general">
             <div class="container">
-                <form action="" method="POST">
+                <form action="<?php include "php/addItemFunc.php";?>" method="POST">
                     <h1>ADD ITEM</h1>
                     <div class="formcontainer">
                         <div class="container">
@@ -70,6 +70,10 @@
                             <label for="ImagePath"><strong>Image Path</strong></label>
                             <input type="text" placeholder="Enter Image Path" name="AddImagePath" required>
                         </div>
+                        <?php 
+                        echo $addmessage;
+                        ?>
+                        
                         <button type="submit"><strong>ADD ITEM</strong></button>
 
                     </div>
@@ -87,19 +91,23 @@
         <br>
         <div class="modifyItem general">
             <div class="container">
-                <form action="" method="POST">
+                <form action="<?php include "php/modifyItemFunc.php" ?>" method="POST">
                     <h1>MODIFY ITEM</h1>
                     <div class="formcontainer">
                         <div class="container">
                             <label for="ItemID"><strong>ID</strong></label>
                             <input type="text" placeholder="Enter Item ID" name="ModifyItemID" required>
                             <label for="ItemName"><strong>Item Name</strong></label>
-                            <input type="text" placeholder="Enter Item Name" name="ModifyItemName" required>
+                            <input type="text" placeholder="Enter Item Name" name="ModifyItemName" >
                             <label for="ItemInfo"><strong>Item Information</strong></label>
-                            <input type="text" placeholder="Enter Information" name="ModifyItemInfo" required>
+                            <input type="text" placeholder="Enter Information" name="ModifyItemInfo" >
                             <label for="ImagePath"><strong>Image Path </strong></label>
-                            <input type="text" placeholder="Enter Image Path" name="ModifyImagePath" required>
+                            <input type="text" placeholder="Enter Image Path" name="ModifyImagePath">
                         </div>
+                        <?php 
+
+                        echo $modmessage;
+                        ?>
                         <button type="submit"><strong>MODIFY ITEM</strong></button>
 
                     </div>
@@ -116,13 +124,17 @@
         <br>
         <div class="deleteItem general">
             <div class="container">
-                <form action="" method="POST">
+                <form action="<?php include"php/deleteItemFunc.php";?>" method="POST">
+                    
                     <h1>DELETE ITEM</h1>
                     <div class="formcontainer">
                         <div class="container">
                             <label for="ItemID"><strong>ID</strong></label>
                             <input type="text" placeholder="Enter Item ID" name="DeleteItemID" required>
                         </div>
+                        <?php 
+                        echo $deletemessage;
+                        ?>
                         <button type="submit"><strong>DELETE ITEM</strong></button>
 
                     </div>
@@ -193,7 +205,12 @@
         <br>
         <div class="modifyTicket general">
             <div class="container">
-                <form action="" method="POST">
+                <script>
+                    function notreloading(){
+                        event.preventDefault();
+                    }
+                </script>
+                <form action="<?php @include 'php/deleteItemFunc.php' ?>" method="POST" onsubmit="notreloading();">
                     <h1>MODIFY TICKET</h1>
                     <div class="formcontainer">
                         <div class="container">
@@ -210,8 +227,6 @@
             </div>
         </div>
     </section>
-
-    
 
 </body>
 
