@@ -14,15 +14,15 @@ pShowOnItem.forEach(element => {
 
 // Handal nav bar
 const menu = document.querySelector('nav .fa-solid');
-const ul = document.querySelector('nav ul');
+const ul1 = document.querySelector('nav ul');
 const lis = document.querySelectorAll('nav ul li a');
 console.log(menu)
 menu.addEventListener("click", function () {
-    ul.classList.toggle("active")
+    ul1.classList.toggle("active")
 })
 lis.forEach(n => n.addEventListener("click", function () {
     menu.classList.remove('active');
-    ul.classList.remove ('active');
+    ul1.classList.remove ('active');
 }));
 
 // handal welcome pragraph

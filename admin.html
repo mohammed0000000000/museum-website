@@ -13,6 +13,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
             rel="stylesheet">
+            <link rel="stylesheet" href="css/admin panel.css">
     </head>
     <body>
         <header>
@@ -38,6 +39,63 @@
             </div>
 
         </header>
-
+        <!-- secound section  -->
+        <section class="left">
+            <div class="addItem general">
+                <div class="container">
+                    <form action="POST">
+                        <h1>ADD ITEM</h1>
+                        <div class="formcontainer">
+                        <div class="container">
+                          <label for="name"><strong>name</strong></label>
+                          <input type="text" placeholder="Enter Item Name" name="name" required>
+                          <label for="info"><strong>info</strong></label>
+                          <input type="text" placeholder="Enter info" name="info" required>
+                          <label for="src"><strong>src Item </strong></label>
+                          <input type="text" placeholder="Enter src Item " name="src" required>
+                        </div>
+                        <button type="submit"><strong>ADD ITEM</strong></button>
+                        
+                        </div>
+                      </form>
+                </div>
+            </div>
+            <div class="modifyItem general">
+                <div class="container">
+                    <form action="POST">
+                        <h1>MODIFY ITEM</h1>
+                        <div class="formcontainer">
+                        <div class="container">
+                            <label for="id"><strong>id</strong></label>
+                          <input type="text" placeholder="Enter Item Id" name="id" required>
+                          <label for="name"><strong>name</strong></label>
+                          <input type="text" placeholder="Enter Item Name" name="name" required>
+                          <label for="info"><strong>info</strong></label>
+                          <input type="text" placeholder="Enter info" name="info" required>
+                          <label for="src"><strong>src Item </strong></label>
+                          <input type="text" placeholder="Enter src Item " name="src" required>
+                        </div>
+                        <button type="submit"><strong>MODIFY ITEM</strong></button>
+                        
+                        </div>
+                      </form>
+                </div>
+            </div>
+            <div class="addItem general">
+                <div class="container"style= 'width:100%;'>
+                    <form action="POST">
+                        <h1>Delete ITEM</h1>
+                        <div class="formcontainer">
+                        <div class="container">
+                          <label for="id"><strong>Id</strong></label>
+                          <input type="text" placeholder="Enter Item ID" name="id" required>
+                        </div>
+                        <button type="submit"><strong>Delete ITEM</strong></button>
+                        
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

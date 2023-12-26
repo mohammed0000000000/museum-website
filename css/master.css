@@ -106,7 +106,7 @@ header nav{
     flex: 1;
     display: flex;
     text-align: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-content: center;
     position: relative;
 }
@@ -145,11 +145,11 @@ nav ul li{
 nav ul li a{
     color: #f1e8c0;
 }
-nav ul li a:hover{
-    color: #ffd122;
+nav ul li:hover a{
+    color:  var(--main-color);
 }
 nav ul li:hover{
-    border-bottom: var(--main-color) solid 2px;
+    border-bottom: white solid 2px;
     color: var(--main-color);
 }
 @media (max-width:767px) {
@@ -168,6 +168,60 @@ nav ul li:hover{
     ul.active{
         left: 0;
     }
+}
+nav ul li a {
+    color: #f1e8c0;
+    position: relative;
+    text-transform: uppercase;
+    padding: 25px 15px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    z-index: 3;
+}
+
+
+
+nav .menu {
+    display: none;
+}
+header .container{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+@media (max-width:767px) {
+
+    nav ul {
+        overflow: hidden;
+        height: 0;
+        width: 0;
+        background-color:#d0b3339a;
+    }
+
+    nav .menu {
+        display: block;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        
+    }
+
+    nav .small {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        transform: translateX(-50px);
+    }
+
+    nav .small li a {
+        padding: 0 10px 15px;
+        color:white;
+    }
+
 }
 /* Home */
 .landing{
@@ -213,6 +267,49 @@ nav ul li:hover{
         max-width: 100%;
     }
     .landing .contant p{
+        text-align: center;
+        margin: auto;
+    }
+}
+.landing .text {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    line-height: 2;
+    letter-spacing: 2px;
+}
+
+.landing .text .content h3 {
+    font-weight: normal;
+    text-align: center;
+    color: #f0dc8f;
+}
+
+.landing .text .content p {
+    color: #f1e8c0;
+    font-size: 13px;
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+@media (max-width:767px) {
+
+    .landing .text {
+
+        width: 100%;
+    }
+
+    .landing .content {
+        max-width: 100%;
+    }
+
+    .landing .content p {
         text-align: center;
         margin: auto;
     }
@@ -302,6 +399,7 @@ nav ul li:hover{
     margin: 10px;
 }
 /* online inquiry*/
+
 .contact-us .content .contact{
     background-color:#ddd;
     border-radius: 5px;
