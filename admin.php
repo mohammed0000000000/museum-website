@@ -139,7 +139,7 @@
         <br>
         <div class="addExhibition general">
             <div class="container">
-                <form action="<?php @include 'php/addExhibitionFunc.php' ?>" method="POST">
+                <form action="<?php include 'php/addExhibitionFunc.php'; ?>" method="POST">
                     <h1>ADD EXHIBITION</h1>
                     <div class="formcontainer">
                         <div class="container">
@@ -165,7 +165,7 @@
         <br>
         <div class="modifyExhibition general">
             <div class="container">
-                <form action="<?php @include 'php/modifyExhibitionFunc.php' ?>" method="POST">
+                <form action="<?php include 'php/modifyExhibitionFunc.php'; ?>" method="POST">
                     <h1>MODIFY EXHIBITION</h1>
                     <div class="formcontainer">
                         <div class="container">
@@ -178,6 +178,8 @@
                             <label for="exhibitionDate"><strong>Exhibition Date</strong></label>
                             <input type="date" name="ModifyExhibitionDate" required>
                         </div>
+                        <?php include 'php/modifyExhibitionFunc.php';
+                        echo $message;?>
                         <button type="submit"><strong>MODIFY EXHIBITION</strong></button>
                     </div>
                 </form>
