@@ -3,6 +3,7 @@
     padding: 0;
     list-style: none;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -23,15 +24,15 @@ header .header-container {
 }
 
 header{
-    width: fit-content;
+    width: 100%;
 }
 
 .header-background{
     background-color: #DBDBDB;
-    padding: 0 7% 0 7%;
+    padding: 0 2% 0 2%;
     width: fit-content;
-    height: 100%;
-    position: sticky;
+    height: 100vh;
+    position: fixed;
     overflow: hidden;
 }
 
@@ -63,6 +64,8 @@ header .logo img{
     display: block;
     padding: 15px 0 15px 7%;
     margin-bottom: 7%;
+    text-decoration: none;
+    color: black;
 }
 
 .header-container li:hover{
@@ -81,11 +84,16 @@ header .logo img{
     font-size: 18;
 }
 
+.right{
+    transform: translate(-15vw,15vh);
+}
+
 .general {
     display: flex;
     justify-content: center;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 15px;
+    height: 100vh;
 }
 
 form {
@@ -94,7 +102,7 @@ form {
 
 input[type=text] {
     width: 100%;
-    padding: 16px 8px;
+    padding: 16px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
@@ -102,16 +110,17 @@ input[type=text] {
 }
 
 button {
-    background-color: #4286f4;
+    background-color: #246d85;
     color: white;
     padding: 14px 0;
     margin: 10px 0;
     border: none;
-    cursor: grab;
+    cursor: pointer;
     width: 48%;
 }
 
 button:hover {
+    transition: 0.5s;
     opacity: 0.8;
 }
 
@@ -123,6 +132,7 @@ button:hover {
 .container {
     padding: 16px 0;
     text-align: left;
+    width: 100%;
 }
 
 span.psw {
