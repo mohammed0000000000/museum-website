@@ -59,7 +59,7 @@
         <br>
         <div class="addItem general">
             <div class="container">
-                <form action="POST">
+                <form action="" method="POST">
                     <h1>ADD ITEM</h1>
                     <div class="formcontainer">
                         <div class="container">
@@ -87,7 +87,7 @@
         <br>
         <div class="modifyItem general">
             <div class="container">
-                <form action="POST">
+                <form action="" method="POST">
                     <h1>MODIFY ITEM</h1>
                     <div class="formcontainer">
                         <div class="container">
@@ -116,7 +116,7 @@
         <br>
         <div class="deleteItem general">
             <div class="container">
-                <form action="POST">
+                <form action="" method="POST">
                     <h1>DELETE ITEM</h1>
                     <div class="formcontainer">
                         <div class="container">
@@ -139,7 +139,7 @@
         <br>
         <div class="addExhibition general">
             <div class="container">
-                <form action="POST">
+                <form action="" method="POST">
                     <h1>ADD EXHIBITION</h1>
                     <div class="formcontainer">
                         <div class="container">
@@ -165,7 +165,7 @@
         <br>
         <div class="modifyExhibition general">
             <div class="container">
-                <form action="POST">
+                <form action="" method="POST">
                     <h1>MODIFY EXHIBITION</h1>
                     <div class="formcontainer">
                         <div class="container">
@@ -193,7 +193,7 @@
         <br>
         <div class="modifyTicket general">
             <div class="container">
-                <form action="POST">
+                <form action="" method="POST">
                     <h1>MODIFY TICKET</h1>
                     <div class="formcontainer">
                         <div class="container">
