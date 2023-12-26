@@ -139,16 +139,16 @@
         <br>
         <div class="addExhibition general">
             <div class="container">
-                <form action="" method="POST">
+                <form action="<?php @include 'php/addExhibitionFunc.php' ?>" method="POST">
                     <h1>ADD EXHIBITION</h1>
                     <div class="formcontainer">
                         <div class="container">
                             <label for="exhibitionName"><strong>Exhibition Name</strong></label>
-                            <input type="text" placeholder="Enter Exhibition Name" name="exhibitionName" required>
+                            <input type="text" placeholder="Enter Exhibition Name" name="AddExhibitionName" required>
                             <label for="exhibitionInfo"><strong>Exhibition Info</strong></label>
-                            <input type="text" placeholder="Enter Exhibition Info" name="exhibitionInfo" required>
+                            <input type="text" placeholder="Enter Exhibition Info" name="AddExhibitionInfo" required>
                             <label for="exhibitionDate"><strong>Exhibition Date</strong></label>
-                            <input type="date" name="exhibitionDate" required>
+                            <input type="date" name="AddExhibitionDate" required>
                         </div>
                         <button type="submit"><strong>ADD EXHIBITION</strong></button>
                     </div>
@@ -165,18 +165,18 @@
         <br>
         <div class="modifyExhibition general">
             <div class="container">
-                <form action="" method="POST">
+                <form action="<?php @include 'php/modifyExhibitionFunc.php' ?>" method="POST">
                     <h1>MODIFY EXHIBITION</h1>
                     <div class="formcontainer">
                         <div class="container">
                             <label for="exhibitionID"><strong>ID</strong></label>
-                            <input type="text" placeholder="Enter Exhibition ID" name="exhibitionID" required>
+                            <input type="text" placeholder="Enter Exhibition ID" name="ModifyExhibitionID" required>
                             <label for="exhibitionName"><strong>Exhibition Name</strong></label>
-                            <input type="text" placeholder="Enter Exhibition Name" name="exhibitionName" required>
+                            <input type="text" placeholder="Enter Exhibition Name" name="ModifyExhibitionName" required>
                             <label for="exhibitionInfo"><strong>Exhibition Info</strong></label>
-                            <input type="text" placeholder="Enter Exhibition Info" name="exhibitionInfo" required>
+                            <input type="text" placeholder="Enter Exhibition Info" name="ModifyExhibitionInfo" required>
                             <label for="exhibitionDate"><strong>Exhibition Date</strong></label>
-                            <input type="date" name="exhibitionDate" required>
+                            <input type="date" name="ModifyExhibitionDate" required>
                         </div>
                         <button type="submit"><strong>MODIFY EXHIBITION</strong></button>
                     </div>
