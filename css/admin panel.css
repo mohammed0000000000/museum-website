@@ -12,6 +12,7 @@ body {
     justify-content: space-around;
 }
 
+<<<<<<< HEAD
 
 header .logo img {
     width: 80px;
@@ -24,6 +25,64 @@ header .header-container {
 }
 
 .container {
+=======
+header{
+    width: fit-content;
+}
+
+.header-background{
+    background-color: #DBDBDB;
+    padding: 0 7% 0 7%;
+    width: fit-content;
+}
+
+header nav h2{
+    color: #D0B333;
+    padding-left: 4%;
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+
+header .logo img{
+    width: 80px;
+}
+
+.header-container {
+    display: flex; 
+    padding-right: 10px;
+}
+
+.header-container ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.header-container li a{
+    display: block;
+    padding: 15px 0 15px 7%;
+}
+
+.header-container h1{
+    color: #D0B333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+>>>>>>> 46da6c42577a26b65332054597cb2d40212dff85
     text-align: center;
 }
 
