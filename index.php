@@ -104,11 +104,11 @@
             </div>
             <div class="content">
                 <div class="box">
-                    <img src="images/cornerstone-egyptian-museum-cairo-emc.jpeg" alt="">
+                    <img src="image/cornerstone-egyptian-museum-cairo-emc.jpeg" alt="">
                     <p class="info">Isis Keystone being hoisted above the main entrance of the Egyptian Museum.</p>
                 </div>
                 <div class="box">
-                    <img src="images/Museum-original-draw.jpg" alt="">
+                    <img src="image/Museum-original-draw.jpg" alt="">
                     <p class="info">Original drawing of the museum</p>
                     <p>Designed by the French architect Marcel Dourgnon, and built by the Italian company owned by Giuseppe Garozzo and
                     Francesco Zaffrani...</p>
