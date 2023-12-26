@@ -64,11 +64,11 @@
                     <div class="formcontainer">
                         <div class="container">
                             <label for="ItemName"><strong>Item Name</strong></label>
-                            <input type="text" placeholder="Enter Item Name" name="ItemName" required>
+                            <input type="text" placeholder="Enter Item Name" name="AddItemName" required>
                             <label for="ItemInfo"><strong>Item Information</strong></label>
-                            <input type="text" placeholder="Enter Item Information" name="ItemInfo" required>
+                            <input type="text" placeholder="Enter Item Information" name="AddItemInfo" required>
                             <label for="ImagePath"><strong>Image Path</strong></label>
-                            <input type="text" placeholder="Enter Image Path" name="ImagePath" required>
+                            <input type="text" placeholder="Enter Image Path" name="AddImagePath" required>
                         </div>
                         <button type="submit"><strong>ADD ITEM</strong></button>
 
@@ -92,13 +92,13 @@
                     <div class="formcontainer">
                         <div class="container">
                             <label for="ItemID"><strong>ID</strong></label>
-                            <input type="text" placeholder="Enter Item ID" name="ItemID" required>
+                            <input type="text" placeholder="Enter Item ID" name="ModifyItemID" required>
                             <label for="ItemName"><strong>Item Name</strong></label>
-                            <input type="text" placeholder="Enter Item Name" name="ItemName" required>
+                            <input type="text" placeholder="Enter Item Name" name="ModifyItemName" required>
                             <label for="ItemInfo"><strong>Item Information</strong></label>
-                            <input type="text" placeholder="Enter Information" name="ItemInfo" required>
+                            <input type="text" placeholder="Enter Information" name="ModifyItemInfo" required>
                             <label for="ImagePath"><strong>Image Path </strong></label>
-                            <input type="text" placeholder="Enter Image Path" name="ImagePath" required>
+                            <input type="text" placeholder="Enter Image Path" name="ModifyImagePath" required>
                         </div>
                         <button type="submit"><strong>MODIFY ITEM</strong></button>
 
@@ -121,7 +121,7 @@
                     <div class="formcontainer">
                         <div class="container">
                             <label for="ItemID"><strong>ID</strong></label>
-                            <input type="text" placeholder="Enter Item ID" name="ItemID" required>
+                            <input type="text" placeholder="Enter Item ID" name="DeleteItemID" required>
                         </div>
                         <button type="submit"><strong>DELETE ITEM</strong></button>
 
@@ -209,6 +209,9 @@
                 </form>
             </div>
         </div>
+        <?php 
+        
+        ?>
     </section>
     
 
