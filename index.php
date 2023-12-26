@@ -98,6 +98,25 @@
                     captivating stories
                 </P>
             </div>
+            <div class="title">
+                <h2>THE EGYPTIAN MUSEUM</h2>
+                <P>Since 1902</P>
+            </div>
+            <div class="content">
+                <div class="box">
+                    <img src="images/cornerstone-egyptian-museum-cairo-emc.jpeg" alt="">
+                    <p class="info">Isis Keystone being hoisted above the main entrance of the Egyptian Museum.</p>
+                </div>
+                <div class="box">
+                    <img src="images/Museum-original-draw.jpg" alt="">
+                    <p class="info">Original drawing of the museum</p>
+                    <p>Designed by the French architect Marcel Dourgnon, and built by the Italian company owned by Giuseppe Garozzo and
+                    Francesco Zaffrani...</p>
+                    <div class="linka">
+                        <a href="https://en.wikipedia.org/wiki/Egyptian_Museum">More Information About Museum</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- Start Contact -->
