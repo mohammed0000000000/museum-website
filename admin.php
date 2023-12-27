@@ -124,7 +124,7 @@
         <br>
         <div class="deleteItem general">
             <div class="container">
-                <form action="<?php include"php/deleteItemFunc.php";?>" method="POST">
+                <form action="<?php include "php/deleteItemFunc.php";?>" method="POST">
                     
                     <h1>DELETE ITEM</h1>
                     <div class="formcontainer">
@@ -184,13 +184,13 @@
                             <label for="exhibitionID"><strong>ID</strong></label>
                             <input type="text" placeholder="Enter Exhibition ID" name="ModifyExhibitionID" required>
                             <label for="exhibitionName"><strong>Exhibition Name</strong></label>
-                            <input type="text" placeholder="Enter Exhibition Name" name="ModifyExhibitionName" required>
+                            <input type="text" placeholder="Enter Exhibition Name" name="ModifyExhibitionName">
                             <label for="exhibitionInfo"><strong>Exhibition Info</strong></label>
-                            <input type="text" placeholder="Enter Exhibition Info" name="ModifyExhibitionInfo" required>
+                            <input type="text" placeholder="Enter Exhibition Info" name="ModifyExhibitionInfo">
                             <label for="exhibitionDate"><strong>Exhibition Date</strong></label>
-                            <input type="date" name="ModifyExhibitionDate" required>
+                            <input type="date" name="ModifyExhibitionDate">
                         </div>
-                        <?php 
+                        <?php
                         echo $ModifyEx;?>
                         <button type="submit"><strong>MODIFY EXHIBITION</strong></button>
                     </div>
@@ -207,22 +207,19 @@
         <br>
         <div class="modifyTicket general">
             <div class="container">
-                <script>
-                    function notreloading(){
-                        event.preventDefault();
-                    }
-                </script>
-                <form action="<?php @include 'php/deleteItemFunc.php' ?>" method="POST" onsubmit="notreloading();">
+                <form action="<?php include 'php/modifyTicketFunc.php' ?>" method="POST">
                     <h1>MODIFY TICKET</h1>
                     <div class="formcontainer">
                         <div class="container">
                             <label for="ticketTitle"><strong>Ticket Title</strong></label>
-                            <input type="text" placeholder="Enter Ticket Title" name="ticketTitle" required>
-                            <label for="ticketPirce"><strong>Ticket Price</strong></label>
-                            <input type="text" placeholder="Enter Ticket Price" name="ticketPirce" required>
+                            <input type="text" placeholder="Enter Ticket Title" name="ticketTitle">
+                            <label for="ticketPrice"><strong>Ticket Price</strong></label>
+                            <input type="text" placeholder="Enter Ticket Price" name="ticketPrice">
                             <label for="ticketExpiration"><strong>Expiration Date</strong></label>
-                            <input type="date" name="ticketExpiration" required>
+                            <input type="date" name="ticketExpiration">
                         </div>
+                        <?php
+                        echo $ModifyTic;?>
                         <button type="submit"><strong>MODIFY TICKET</strong></button>
                     </div>
                 </form>

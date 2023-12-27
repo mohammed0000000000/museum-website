@@ -1,22 +1,44 @@
-<?php 
+<?php
 $ModifyEx = '';
-if (isset($_POST['ModifyExhibitionID'])){
-    $name = $_POST['ModifyExhibitionName'];
-    $info = $_POST['ModifyExhibitionInfo'];
-    $date = $_POST['ModifyExhibitionDate'];
+if (isset($_POST['ModifyExhibitionID'])) {
+    $name = (isset($_POST['ModifyExhibitionName'])) ? $_POST['ModifyExhibitionName'] :'';
+    $info = (isset($_POST['ModifyExhibitionInfo'])) ? $_POST['ModifyExhibitionInfo'] :'';
+    $date = (isset($_POST['ModifyExhibitionDate'])) ? $_POST['ModifyExhibitionDate'] :'';
     $ID = $_POST['ModifyExhibitionID'];
     $host = 'localhost';
     $user = 'root';
     $password = "";
     $db = 'museumdb';
     $theConnection = mysqli_connect($host, $user, $password, $db);
-    $modifyExhibition = "UPDATE exhibitions SET NAME = '$name', INFO = '$info', exhibiDATE = '$date' where ID = '$ID'";
-    $stmt = mysqli_prepare($theConnection, $modifyExhibition); 
-    mysqli_stmt_execute($stmt);
-    if(mysqli_stmt_affected_rows($stmt) == 0){
-        $ModifyEx = '<script> alert("incorrect ID or values unchanged");</script>'; 
-    }else{
-        $ModifyEx = '<script> alert("Exhibition Updated Successfully");</script>'; 
+    if ($name) {
+        $modifyExhibition = "UPDATE exhibitions SET NAME = '$name'  where ID = $ID";
+        $stmt = mysqli_prepare($theConnection, $modifyExhibition);
+        mysqli_stmt_execute($stmt);
+        if (mysqli_stmt_affected_rows($stmt) == 0) {
+            $ModifyEx = '<script type="text/javascript"> alert("Id not found"); </script>';
+        } else {
+            $ModifyEx = '<script type="text/javascript"> alert("Exhibition modified successfully");</script>';
+        }
     }
-}   
+    if ($info) {
+        $modifyExhibition = "UPDATE exhibitions SET info = '$info'  where ID = $ID";
+        $stmt = mysqli_prepare($theConnection, $modifyExhibition);
+        mysqli_stmt_execute($stmt);
+        if (mysqli_stmt_affected_rows($stmt) == 0) {
+            $ModifyEx = '<script type="text/javascript"> alert("Id not found ");</script>';
+        } else {
+            $ModifyEx = '<script type="text/javascript"> alert("Exhibition modified successfully");</script>';
+        }
+    }
+    if ($date) {
+        $modifyExhibition = "UPDATE exhibitions SET exhibiDATE = '$date'  where ID = $ID";
+        $stmt = mysqli_prepare($theConnection, $modifyExhibition);
+        mysqli_stmt_execute($stmt);
+        if (mysqli_stmt_affected_rows($stmt) == 0) {
+            $ModifyEx = '<script type="text/javascript"> alert("Id not found");</script>';
+        } else {
+            $ModifyEx = '<script type="text/javascript"> alert("Exhibition modified successfully");</script>';
+        }
+    }
+}
 ?>

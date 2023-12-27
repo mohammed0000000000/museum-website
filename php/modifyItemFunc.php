@@ -1,6 +1,5 @@
 <?php
-$modmessage= '';
-
+$modmessage = '';
 if (isset($_POST['ModifyItemID'])) {
     $name = (isset($_POST['ModifyItemName'])) ? $_POST['ModifyItemName'] : '';
     $info = (isset($_POST['ModifyItemInfo'])) ? $_POST['ModifyItemInfo'] : '';
@@ -21,7 +20,7 @@ if (isset($_POST['ModifyItemID'])) {
         alert("Id not found");
         </script>
         ';
-        }else {
+        } else {
             $modmessage = '<script type="text/javascript">
             alert("Item modifyed successfully");</script>';
         }
@@ -36,24 +35,24 @@ if (isset($_POST['ModifyItemID'])) {
         alert("Id not found ");
         </script>
         ';
-        }else {
+        } else {
             $modmessage = '<script type="text/javascript">
             alert("Item modifyed successfully");</script>';
         }
     }
     if ($imagePaht) {
-        $modifyitem = "UPDATE gallery SET src = '$imagePaht'  where ID = $ID"; 
-          $stmt = mysqli_prepare($theConnection, $modifyitem);
+        $modifyitem = "UPDATE gallery SET src = '$imagePaht'  where ID = $ID";
+        $stmt = mysqli_prepare($theConnection, $modifyitem);
         mysqli_stmt_execute($stmt);
         if (mysqli_stmt_affected_rows($stmt) == 0) {
             $modmessage = '<script type="text/javascript">
         alert("Id not found");
         </script>
         ';
-        }else {
+        } else {
             $modmessage = '<script type="text/javascript">
             alert("Item modifyed successfully");</script>';
-        }        
-    }   
+        }
+    }
 }
 ?>
