@@ -20,6 +20,8 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
         </script>";
     } else if ($access==true){
         header("Location: http://localhost/museum-website/admin.php");
+    }else if (!$access){ 
+        header("Location: http://localhost/museum-website/index.php");
     }
 
 }

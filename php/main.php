@@ -29,5 +29,7 @@ function generateGallery(){
 
 <?php
 }
+
+
 ?>
 

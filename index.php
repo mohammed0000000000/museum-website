@@ -12,11 +12,12 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
+
     <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
+    <link rel="stylesheet" href="css/service.css">
     <title>Museum</title>
 </head>
 
@@ -86,6 +87,15 @@
                 <P>Step into a world where history and art interwine to tell
                     captivating stories
                 </P>
+                <div class="boxes">
+                    <?php @include 'php/services.php';
+                    
+                    ?>
+                </div>
+                <div class="tic">
+                    <button type='submit'>ONLINE ticket</button>
+                    <span class="price" style="display :block;">120$</span>
+                </div>
             </div>
         </div>
     </div>
@@ -110,8 +120,9 @@
                 <div class="box">
                     <img src="image/Museum-original-draw.jpg" alt="">
                     <p class="info">Original drawing of the museum</p>
-                    <p>Designed by the French architect Marcel Dourgnon, and built by the Italian company owned by Giuseppe Garozzo and
-                    Francesco Zaffrani...</p>
+                    <p>Designed by the French architect Marcel Dourgnon, and built by the Italian company owned by
+                        Giuseppe Garozzo and
+                        Francesco Zaffrani...</p>
                     <div class="linka">
                         <a href="https://en.wikipedia.org/wiki/Egyptian_Museum">More Information About Museum</a>
                     </div>
