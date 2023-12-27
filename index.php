@@ -120,13 +120,8 @@
                 <div class="box">
                     <img src="image/Museum-original-draw.jpg" alt="">
                     <p class="info">Original drawing of the museum</p>
-<<<<<<< HEAD
                     <p>Designed by the French architect Marcel Dourgnon, and built by the Italian company owned by
                         Giuseppe Garozzo and
-=======
-                    <p>Designed by the French architect Marcel Dourgnon, and built by the Italian company owned by Giuseppe Garozzo
-                        and
->>>>>>> 940be26b54f6abb8daed34e5ba75443dfc9f7627
                         Francesco Zaffrani...</p>
                     <div class="linka">
                         <a href="https://en.wikipedia.org/wiki/Egyptian_Museum">More Information About Museum</a>
@@ -196,8 +191,4 @@
     </footer>
     <script src="main.js"></script>
 </body>
-<<<<<<< HEAD
-
-=======
->>>>>>> 940be26b54f6abb8daed34e5ba75443dfc9f7627
 </html>

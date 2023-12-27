@@ -106,7 +106,7 @@ header nav{
     flex: 1;
     display: flex;
     text-align: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-content: center;
     position: relative;
 }
