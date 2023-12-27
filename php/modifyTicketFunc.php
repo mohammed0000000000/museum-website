@@ -45,13 +45,10 @@ if (isset($_POST['ticketTitle'])||isset($_POST['ticketPrice'])||isset($_POST['ti
         }
     }
     $total .= $ModifyTic1 . $ModifyTic2 . $ModifyTic3;    
-    if ($total){
+    if ($total){    
         $ModifyTic = "<script> alert('$total'); </script>";
     }
 }
 
-{
-    header("location: http://localhost/museum-website/index.php");
-}
     
 ?>

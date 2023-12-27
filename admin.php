@@ -162,6 +162,9 @@
                             <label for="exhibitionDate"><strong>Exhibition Date</strong></label>
                             <input type="date" name="AddExhibitionDate" required>
                         </div>
+                        <?php 
+                        echo $addexalert ;
+                        ?>
                         <button type="submit"><strong>ADD EXHIBITION</strong></button>
                     </div>
                 </form>
