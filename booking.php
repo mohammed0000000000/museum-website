@@ -9,9 +9,7 @@
 </head>
 
 <body>
-    <form action="<?php 
-    @include 'php/bookmethod.php'
-    ?>" method='POST'>
+    <form action="php/bookmethod.php" method='POST'>
         <div class="in">
             <label for="email">Email : </label>
             <input name="bookemail" type="text" placeholder="Enter your Email" required>
@@ -29,18 +27,18 @@
                 <label for="cvc">CVC : </label>
                 <input name="cvc" type="text" placeholder="123" required>
             </div>
-
         </div>
-
-        <button type=submit>
-            book
-        </button>
         <?php
+       session_start();
         if (isset($_SESSION['bookmessage'])) {
             echo $_SESSION['bookmessage'];
             unset($_SESSION['bookmessage']);
         }
         ?>
+        <button type=submit>
+            book
+        </button>
+        
 
 
     </form>

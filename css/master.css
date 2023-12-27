@@ -562,7 +562,7 @@ input[type='submit']:hover{
 }
 /* Footer */
 footer{
-    background-image: url("../image/footer1.jpg");
+    background-image: url("image/footer1.jpg");
     background-size: contain;
     height: 300px;
     position: relative;

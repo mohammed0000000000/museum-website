@@ -55,7 +55,7 @@ function themain (){
         }
         else { 
             $_SESSION['bookmessage']="<script> 
-        alert ('your credit card is invaild');</script>;
+        alert ('your credit card is invaild');</script>
         ";
         }
         }
@@ -63,6 +63,7 @@ function themain (){
 
 }
 themain();
-// header('Location: http://localhost/museum-website/index.php');
+header('Location: http://localhost/museum-website/booking.php');
+exit();
 
 ?>

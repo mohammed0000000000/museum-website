@@ -7,7 +7,7 @@
     <!-- Render All Elements Normally -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Font Awesome Libarary -->
-    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome-free-6.5.1-web/css/all.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -89,13 +89,14 @@
                 </P>
                 <div class="boxes">
                     <?php @include 'php/services.php';
-                    
                     ?>
                 </div>
+                <form action="php/theticket.php" method='POST'>
                 <div class="tic">
                     <button type='submit'>ONLINE ticket</button>
                     <span class="price" style="display :block;">120$</span>
                 </div>
+                </form>
             </div>
         </div>
     </div>
@@ -186,7 +187,7 @@
         </div>
         <div class="text">
             <p>This website uses cookies to ensure you get the best experience on our website. <span><a href="#">cookies
-                        Policy</a></span></p>
+                 Policy</a></span></p>
         </div>
     </footer>
     <script src="main.js"></script>
