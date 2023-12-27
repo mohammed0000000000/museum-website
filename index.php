@@ -11,7 +11,7 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<<<<<<< HEAD
+
 
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
@@ -19,14 +19,7 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/service.css">
     <title>Museum</title>
-=======
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <!-- Main Template css file -->
-    <link rel="stylesheet" href="css/master.css">
-    <title> Museum</title>
->>>>>>> 940be26b54f6abb8daed34e5ba75443dfc9f7627
+
 </head>
 
 <body>
