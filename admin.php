@@ -16,7 +16,7 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/admin panel.css">
-    <script src="admin.js"></script>
+
 </head>
 
 <body>
@@ -59,7 +59,7 @@
         <br>
         <div class="addItem general">
             <div class="container">
-                <form action="<?php include "php/addItemFunc.php";?>" method="POST">
+                <form action="php/addItemFunc.php" method="POST">
                     <h1>ADD ITEM</h1>
                     <div class="formcontainer">
                         <div class="container">
@@ -70,10 +70,13 @@
                             <label for="ImagePath"><strong>Image Path</strong></label>
                             <input type="text" placeholder="Enter Image Path" name="AddImagePath" required>
                         </div>
-                        <?php 
-                        echo $addmessage;
+                        <?php
+                        session_start();
+                        if (isset($_SESSION['addmessage'])) {
+                            echo $_SESSION['addmessage'];
+                            unset($_SESSION['addmessage']);
+                        }
                         ?>
-                        
                         <button type="submit"><strong>ADD ITEM</strong></button>
 
                     </div>
@@ -91,22 +94,24 @@
         <br>
         <div class="modifyItem general">
             <div class="container">
-                <form action="<?php include "php/modifyItemFunc.php" ?>" method="POST">
+                <form action="php/modifyItemFunc.php" method="POST">
                     <h1>MODIFY ITEM</h1>
                     <div class="formcontainer">
                         <div class="container">
                             <label for="ItemID"><strong>ID</strong></label>
                             <input type="text" placeholder="Enter Item ID" name="ModifyItemID" required>
                             <label for="ItemName"><strong>Item Name</strong></label>
-                            <input type="text" placeholder="Enter Item Name" name="ModifyItemName" >
+                            <input type="text" placeholder="Enter Item Name" name="ModifyItemName">
                             <label for="ItemInfo"><strong>Item Information</strong></label>
-                            <input type="text" placeholder="Enter Information" name="ModifyItemInfo" >
+                            <input type="text" placeholder="Enter Information" name="ModifyItemInfo">
                             <label for="ImagePath"><strong>Image Path </strong></label>
                             <input type="text" placeholder="Enter Image Path" name="ModifyImagePath">
                         </div>
-                        <?php 
-
-                        echo $modmessage;
+                        <?php
+                        if (isset($_SESSION['modmessage'])) {
+                            echo $_SESSION['modmessage'];
+                            unset($_SESSION['modmessage']);
+                        }
                         ?>
                         <button type="submit"><strong>MODIFY ITEM</strong></button>
 
@@ -124,16 +129,19 @@
         <br>
         <div class="deleteItem general">
             <div class="container">
-                <form action="<?php include "php/deleteItemFunc.php";?>" method="POST">
-                    
+                <form action="php/deleteItemFunc.php" method="POST">
+
                     <h1>DELETE ITEM</h1>
                     <div class="formcontainer">
                         <div class="container">
                             <label for="ItemID"><strong>ID</strong></label>
                             <input type="text" placeholder="Enter Item ID" name="DeleteItemID" required>
                         </div>
-                        <?php 
-                        echo $deletemessage;
+                        <?php
+                        if (isset($_SESSION['deletemessage'])) {
+                            echo $_SESSION['deletemessage'];
+                            unset($_SESSION['deletemessage']);
+                        }
                         ?>
                         <button type="submit"><strong>DELETE ITEM</strong></button>
 
@@ -151,7 +159,7 @@
         <br>
         <div class="addExhibition general">
             <div class="container">
-                <form action="<?php include 'php/addExhibitionFunc.php'; ?>" method="POST">
+                <form action='php/addExhibitionFunc.php' method="POST">
                     <h1>ADD EXHIBITION</h1>
                     <div class="formcontainer">
                         <div class="container">
@@ -162,8 +170,11 @@
                             <label for="exhibitionDate"><strong>Exhibition Date</strong></label>
                             <input type="date" name="AddExhibitionDate" required>
                         </div>
-                        <?php 
-                        echo $addexalert ;
+                        <?php
+                        if (isset($_SESSION['addExmessage'])) {
+                            echo $_SESSION['addExmessage'];
+                            unset($_SESSION['addExmessage']);
+                        }
                         ?>
                         <button type="submit"><strong>ADD EXHIBITION</strong></button>
                     </div>
@@ -180,7 +191,7 @@
         <br>
         <div class="modifyExhibition general">
             <div class="container">
-                <form action="<?php include 'php/modifyExhibitionFunc.php'; ?>" method="POST">
+                <form action='php/modifyExhibitionFunc.php' method="POST">
                     <h1>MODIFY EXHIBITION</h1>
                     <div class="formcontainer">
                         <div class="container">
@@ -194,7 +205,11 @@
                             <input type="date" name="ModifyExhibitionDate">
                         </div>
                         <?php
-                        echo $ModifyEx;?>
+                        if (isset($_SESSION['ModifyEx'])) {
+                            echo $_SESSION['ModifyEx'];
+                            unset($_SESSION['ModifyEx']);
+                        }
+                        ?>
                         <button type="submit"><strong>MODIFY EXHIBITION</strong></button>
                     </div>
                 </form>
@@ -210,10 +225,13 @@
         <br>
         <div class="modifyTicket general">
             <div class="container">
-                <form action="<?php include 'php/modifyTicketFunc.php' ?>" method="POST">
+                <form action='php/modifyTicketFunc.php' method="POST">
                     <h1>MODIFY TICKET</h1>
                     <div class="formcontainer">
                         <div class="container">
+                        
+                            <label for="ticketID"><strong>Ticket ID</strong></label>
+                            <input type="text" placeholder="Enter Ticket ID" name="ticketID" required>
                             <label for="ticketTitle"><strong>Ticket Title</strong></label>
                             <input type="text" placeholder="Enter Ticket Title" name="ticketTitle">
                             <label for="ticketPrice"><strong>Ticket Price</strong></label>
@@ -222,14 +240,38 @@
                             <input type="date" name="ticketExpiration">
                         </div>
                         <?php
-                        echo $ModifyTic;?>
+                        if (isset($_SESSION['ModifyTic'])) {
+                            echo $_SESSION['ModifyTic'];
+                            unset($_SESSION['ModifyTic']);
+                        }
+                        ?>
                         <button type="submit"><strong>MODIFY TICKET</strong></button>
                     </div>
+
+                </form>
+            </div>
+        </div>
+        <br id="generateReport">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="generateReport general">
+            <div class="container">
+                <form action="php/generateReportFunc.php" method="POST">
+                    <h1>GENERATE REPORT</h1>
+                    <div class="formcontainer">
+                        <button type="submit"><strong>GENERATE REPORT</strong></button>
+                    </div>
+
                 </form>
             </div>
         </div>
     </section>
-
+    <script src="admin.js"></script>
 </body>
 
 </html>

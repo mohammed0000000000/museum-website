@@ -70,7 +70,7 @@ a{
     letter-spacing: 2px;
     line-height: 1.6;
     padding: 10px;
-    max-width: 45%;
+    max-width: 80%;
     margin: auto;
     color: var(--last-color);
     font-style: italic;
@@ -320,6 +320,11 @@ header .container{
     padding:0;
     margin:0;
 } */
+.gallary .container .boxes .box h2{
+    text-align: center;
+    font-weight: normal;
+}
+
 .gallary .container .boxes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -354,9 +359,11 @@ header .container{
     height: 100%;
     left:50%;
     top:50%;
+    line-height: 1.5;
+    letter-spacing: 1px;
     transform:translate(-50%,-50%);
     padding:30px;
-    transition:2s;
+    transition:0.7s;
     background-color:var(--main-color);
     opacity:0;
     overflow-y: hidden;
@@ -555,7 +562,7 @@ input[type='submit']:hover{
 }
 /* Footer */
 footer{
-    background-image: url("../images/footer1.jpg");
+    background-image: url("../image/footer1.jpg");
     background-size: contain;
     height: 300px;
     position: relative;

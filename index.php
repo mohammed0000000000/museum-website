@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- Font Awesome Libarary -->
     <link rel="stylesheet" href="css/all.min.css">
-    <!-- Main Template css file -->
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<<<<<<< HEAD
 
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
@@ -19,33 +19,41 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/service.css">
     <title>Museum</title>
+=======
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Main Template css file -->
+    <link rel="stylesheet" href="css/master.css">
+    <title> Museum</title>
+>>>>>>> 940be26b54f6abb8daed34e5ba75443dfc9f7627
 </head>
 
 <body>
     <!-- Start Heading -->
     <header>
         <div class="container">
-            <a href="" class="logo">
-                <img src="image/thelogo.png" alt="" srcset="">
-            </a>
             <nav>
-                <ul class="">
-                    <li><a href="#landing">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Gallary</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                <div href="" class="logo">
+                    <img src="image/thelogo.png" alt="" srcset="">
+                </div>
+                <ul>
+                    <li><a href="#Land">Home</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#Gallary">Gallary</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#ContactUS">Contact</a></li>
                 </ul>
                 <div class="togal">
-                    <img src="image/the menu .png" class="menu" alt="">
+                    <i class="fa-solid fa-bars"></i>
                 </div>
             </nav>
         </div>
     </header>
     <!-- Start land-page -->
-    <div class="landing">
-        <div class="text">
-            <div class="content">
+    <div class="landing" id="Land">
+        <div class="intro">
+            <div class="contant">
                 <h3>Welcome To Musuem</h3>
                 <p>
                     Welcome to our museum's digital realm! Step into a world where history and art intertwine to tell
@@ -56,7 +64,7 @@
         </div>
     </div>
     <!-- Start gallary -->
-    <div class="gallary">
+    <div class="gallary" id="Gallary">
         <div class="container">
             <div class="specail-heading">
                 <h2>GALLARY</h2>
@@ -69,7 +77,6 @@
                 @include('php/main.php');
                 generateGallery();
                 ?>
-
             </div>
         </div>
     </div>
@@ -80,7 +87,7 @@
     </div>
 
     <!-- Start Services -->
-    <div class="services">
+    <div class="services" id="Services">
         <div class="container">
             <div class="specail-heading">
                 <h2>SERVICES</h2>
@@ -100,7 +107,7 @@
         </div>
     </div>
     <!-- Start About -->
-    <div class="about">
+    <div class="about" id="About">
         <div class="container">
             <div class="specail-heading">
                 <h2>ABOUT</h2>
@@ -120,8 +127,13 @@
                 <div class="box">
                     <img src="image/Museum-original-draw.jpg" alt="">
                     <p class="info">Original drawing of the museum</p>
+<<<<<<< HEAD
                     <p>Designed by the French architect Marcel Dourgnon, and built by the Italian company owned by
                         Giuseppe Garozzo and
+=======
+                    <p>Designed by the French architect Marcel Dourgnon, and built by the Italian company owned by Giuseppe Garozzo
+                        and
+>>>>>>> 940be26b54f6abb8daed34e5ba75443dfc9f7627
                         Francesco Zaffrani...</p>
                     <div class="linka">
                         <a href="https://en.wikipedia.org/wiki/Egyptian_Museum">More Information About Museum</a>
@@ -173,7 +185,7 @@
                 <img src="image/logo-egy-ministry-of-Tourism-antiquities-00-1.png" alt="" srcset="">
             </div>
             <div class="box">
-                <img src="images/logo-egyptian-museum-cairo.png" alt="" srcset="">
+                <img src="image/logo-egyptian-museum-cairo.png" alt="" srcset="">
             </div>
             <div class="box">
                 <p>Follow Us</p>
@@ -189,8 +201,10 @@
                         Policy</a></span></p>
         </div>
     </footer>
-    </footer>
     <script src="main.js"></script>
 </body>
+<<<<<<< HEAD
 
+=======
+>>>>>>> 940be26b54f6abb8daed34e5ba75443dfc9f7627
 </html>
