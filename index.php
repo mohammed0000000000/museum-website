@@ -38,10 +38,10 @@
                     <li><a href="#ContactUS">Contact</a></li>
                     <li class='buttons'>
                         <form action="" method='POST'>
-                            <button type="submit" name='login' onclick="<?php if(isset($_POST['login'])){header('Location: http://localhost/museum-website/login.php');}?>">
+                            <button type="submit" name='Login' onclick="<?php if(isset($_POST['login'])){header('Location: http://localhost/museum-website/login.php');}?>">
                                 login 
                             </button>
-                            <button type="submit" name="sign" onclick="<?php if(isset($_POST['sign'])){header('Location: http://localhost/museum-website/risgster.php');}?>">
+                            <button type="submit" name="Sign" onclick="<?php if(isset($_POST['sign'])){header('Location: http://localhost/museum-website/risgster.php');}?>">
                                 sign up
                             </button>
                         </form>
@@ -164,11 +164,11 @@
                 <div class="box contact">
                     <h2>ONLINE INQUIRY</h2>
                     <form action="inquires.php" method="POST">
-                        <input type="text" name="name" id="" placeholder="Name">
-                        <input type="email" name="email" id="" placeholder="E-mail">
-                        <input type="tel" name="phone" id="" placeholder="Phone">
-                        <input type="text" name="subject" id="" placeholder="Subject">
-                        <textarea name="prapraph" id="" cols="30" rows="10" placeholder="Your Message jkkdfjkf">
+                        <input type="text" name="name" id="" placeholder="Name" required>
+                        <input type="email" name="email" id="" placeholder="E-mail" required>
+                        <input type="tel" name="phone" id="" placeholder="Phone" required>
+                        <input type="text" name="subject" id="" placeholder="Subject" required>
+                        <textarea name="prapraph" id="" cols="30" rows="10" placeholder="Your Message jkkdfjkf" required>
                         </textarea>
                         <input type="submit" value="Send">
                     </form>

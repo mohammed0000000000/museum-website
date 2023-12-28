@@ -164,11 +164,11 @@
                 <div class="box contact">
                     <h2>ONLINE INQUIRY</h2>
                     <form action="inquires.php" method="POST">
-                        <input type="text" name="name" id="" placeholder="Name">
-                        <input type="email" name="email" id="" placeholder="E-mail">
-                        <input type="tel" name="phone" id="" placeholder="Phone">
-                        <input type="text" name="subject" id="" placeholder="Subject">
-                        <textarea name="prapraph" id="" cols="30" rows="10" placeholder="Your Message jkkdfjkf">
+                        <input type="text" name="name" id="" placeholder="Name" required>
+                        <input type="email" name="email" id="" placeholder="E-mail" required>
+                        <input type="tel" name="phone" id="" placeholder="Phone" required>
+                        <input type="text" name="subject" id="" placeholder="Subject" required>
+                        <textarea name="prapraph" id="" cols="30" rows="10" placeholder="Your Message jkkdfjkf" required>
                         </textarea>
                         <input type="submit" value="Send">
                     </form>
