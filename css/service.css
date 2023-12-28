@@ -10,7 +10,7 @@
 }
 .services .boxes .exbhs .info {
   margin: 0;
-  max-width: 90%;
+  max-width: 100%;
   text-align: center;
   color: black;
   white-space: 2;
@@ -21,7 +21,7 @@
   
 }
 
-.services.services button {
+.services button {
   color: white;
   background-color: darkgoldenrod;
   border: none;
