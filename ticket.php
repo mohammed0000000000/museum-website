@@ -84,6 +84,10 @@
                     <tr>
                         <td class="type">Total : </td>
                         <td id="total"> 0 </td>
+                        <td > <?php 
+                        session_start();
+                        if (isset())
+                        ?></td>
                     </tr>
                     <tr>
                         <td class="type last">Booking : </td>

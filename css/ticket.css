@@ -76,6 +76,10 @@ header .container .togal {
     display: flex;
     align-items: center;
   }
+  .fheas button {
+    background-color: transparent;
+    border:none;
+  }
 .landing {
   position: relative;
   /* background-image: url("/images/footer.jpg"); */
