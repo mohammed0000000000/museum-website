@@ -94,7 +94,6 @@
                 <form action="php/theticket.php" method='POST'>
                 <div class="tic">
                     <button type='submit'>ONLINE ticket</button>
-                    <span class="price" style="display :block;">120$</span>
                 </div>
                 </form>
             </div>
