@@ -36,6 +36,16 @@
                     <li><a href="#Gallary">Gallary</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#ContactUS">Contact</a></li>
+                    <li class='buttons'>
+                        <form action="" method='POST'>
+                            <button type="submit" name='login' onclick="<?php if(isset($_POST['login'])){header('Location: http://localhost/museum-website/login.php');}?>">
+                                login 
+                            </button>
+                            <button type="submit" name="sign" onclick="<?php if(isset($_POST['sign'])){header('Location: http://localhost/museum-website/risgster.php');}?>">
+                                sign up
+                            </button>
+                        </form>
+                    </li>
                 </ul>
                 <div class="togal">
                     <i class="fa-solid fa-bars"></i>

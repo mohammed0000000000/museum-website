@@ -152,7 +152,27 @@ nav ul li:hover{
     border-bottom: white solid 2px;
     color: var(--main-color);
 }
-@media (max-width:767px) {
+header li button{ 
+    width:80px;
+    border:none;
+    background-color: var(--main-color);
+    color:white;
+    padding:10px;
+    transition: .3s;
+    cursor:pointer;
+}
+header li button:hover{
+    color:var(--main-color);
+    background-color:white;
+}
+li.buttons form{
+    display: flex;
+    gap:11px;
+}
+li.buttons:hover{
+    border:none;
+}
+@media (max-width:992px) {
     nav .fa-solid{
     display: block;
     }
@@ -187,7 +207,7 @@ header .container{
     flex-direction: row;
     justify-content: space-around;
 }
-@media (max-width:767px) {
+@media (max-width:992px) {
 
     nav ul {
         overflow: hidden;
