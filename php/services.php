@@ -32,7 +32,7 @@ foreach ($rows as $row) {
 ?>
     <div class="exbhs">
         <div class='imag'>
-        <img src ='image/4.jpg' >
+        <img src ='image/4a.jpg'>
         </div>
         <h1 class="name" id='name'>
             <?php echo $row['name']; ?>
