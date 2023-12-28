@@ -1,3 +1,16 @@
+<?php 
+session_start();
+if(!$_SESSION['logged']){
+    header('Location: http://localhost/museum-website/login.php');
+    exit();
+}
+if(!$_SESSION['adminAccess']){
+    header('Location: http://localhost/museum-website/login.php');
+    exit();
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -71,7 +84,6 @@
                             <input type="text" placeholder="Enter Image Path" name="AddImagePath" required>
                         </div>
                         <?php
-                        session_start();
                         if (isset($_SESSION['addmessage'])) {
                             echo $_SESSION['addmessage'];
                             unset($_SESSION['addmessage']);

@@ -1,3 +1,15 @@
+<?php 
+session_start();
+if(!$_SESSION['logged']){
+    header('Location: http://localhost/museum-website/login.php');
+    exit();
+}
+if($_SESSION['adminAccess']){
+    header('Location: http://localhost/museum-website/admin.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,12 +48,13 @@
                     <li><a href="#Gallary">Gallary</a></li>
                     <li><a href="#About">About</a></li>
                     <li><a href="#ContactUS">Contact</a></li>
-                    <li class='buttons' style='display:none;'>
+                    <li class='buttons' style=>
                         <form action="" method='POST'>
-                            <button type="submit" name='login' onclick="<?php if(isset($_POST['login'])){header('Location: http://localhost/museum-website/login.php');}?>">
-                                login 
+                            <button type="submit" name='logout' onclick="<?php if(isset($_POST['logout'])){header('Location: http://localhost/museum-website/login.php');
+                            $_SESSION['logged'] = false;}?>">
+                                logout 
                             </button>
-                            <button type="submit" name="sign" onclick="<?php if(isset($_POST['sign'])){header('Location: http://localhost/museum-website/risgster.php');}?>">
+                            <button type="submit" name="sign" onclick="<?php if(isset($_POST['sign'])){header('Location: http://localhost/museum-website/risgster.php');}?>" style="display: none;">
                                 sign up
                             </button>
                         </form>

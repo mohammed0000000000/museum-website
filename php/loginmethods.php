@@ -23,11 +23,14 @@ function Login()
             header("Location: http://localhost/museum-website/login.php");
             exit();
         } else {
+            $_SESSION['logged'] = true;
             $access = $therow[2];
             if ($access == true) {
+                $_SESSION['adminAccess'] = true;
                 header("Location: http://localhost/museum-website/admin.php");
                 exit();
             } else if (!$access) {
+                $_SESSION['adminAccess'] = false;
                 header("Location: http://localhost/museum-website/index1.php");
                 exit();
             }

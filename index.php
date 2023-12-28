@@ -1,3 +1,15 @@
+<?php 
+session_start();
+if($_SESSION['logged']){
+    header('Location: http://localhost/museum-website/index1.php');
+    exit();
+}
+if($_SESSION['adminAccess']){
+    header('Location: http://localhost/museum-website/admin.php');
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
