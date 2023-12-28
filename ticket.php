@@ -84,7 +84,6 @@
                     <tr>
                         <td class="type">Total : </td>
                         <td id="total"> 0 </td>
-                        
                     </tr>
                     <tr>
                         <td class="type last">Booking : </td>

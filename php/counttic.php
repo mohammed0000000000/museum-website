@@ -1,6 +1,8 @@
 <?php
 session_start();
-$price = 0;
+$tor = 0;
+$std = 0;
+$arab = 0;
 if (isset($_POST['btn'])) {
     header('Location: http://localhost/museum-website/booking.php');
 }
@@ -17,5 +19,5 @@ $arab=$_POST['arab'];
 if (isset($_POST['std'])){
     $std=$_POST['std'];
 }
-$_SESSION['count']= $arab + $std + $tor;
+$_SESSION['counting']= $arab + $std + $tor;
 ?>
