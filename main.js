@@ -20,11 +20,11 @@ const ul = document.querySelector('nav ul');
 const lis = document.querySelectorAll('nav ul li a');
 console.log(menu)
 menu.addEventListener("click", function () {
-    ul.classList.toggle("active")
+    ul.classList.toggle("small")
 })
 lis.forEach(n => n.addEventListener("click", function () {
-    menu.classList.remove('active');
-    ul.classList.remove ('active');
+    menu.classList.remove('small');
+    ul.classList.remove ('small');
 }));
 
 // handal welcome pragraph

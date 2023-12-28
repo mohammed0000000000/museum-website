@@ -165,9 +165,7 @@ nav ul li:hover{
         background-color: rgb( 0 0 0 / 30%);
         transition: .3s;
     }
-    ul.active{
-        left: 0;
-    }
+
 }
 nav ul li a {
     color: #f1e8c0;
@@ -211,10 +209,10 @@ header .container{
         flex-direction: column;
         position: absolute;
         top: 100%;
-        left: 0;
+        left: 50%;
         width: 100%;
         height: fit-content;
-        transform: translateX(-50px);
+        transform: translateX(-50%);
     }
 
     nav .small li a {
