@@ -283,7 +283,7 @@ if(!$_SESSION['adminAccess']){
             </div>
         </div>
     </section>
-    <script src="admin.js"></script>
+    <script src="js/admin.js"></script>
 </body>
 
 </html>

@@ -176,7 +176,7 @@ if($_SESSION['adminAccess']){
                 </div>
                 <div class="box contact">
                     <h2>ONLINE INQUIRY</h2>
-                    <form action="inquires.php" method="POST">
+                    <form action="php/inquires.php" method="POST">
                         <input type="text" name="name" id="" placeholder="Name" required>
                         <input type="email" name="email" id="" placeholder="E-mail" required>
                         <input type="tel" name="phone" id="" placeholder="Phone" required>
@@ -212,6 +212,6 @@ if($_SESSION['adminAccess']){
                  Policy</a></span></p>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

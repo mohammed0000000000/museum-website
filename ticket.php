@@ -131,7 +131,7 @@
             </div>
         </div>
     </div>
-    <script src='ticket.js'></script>
+    <script src='js/ticket.js'></script>
 </body>
 
 </html>

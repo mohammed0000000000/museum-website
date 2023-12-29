@@ -50,10 +50,10 @@ if($_SESSION['adminAccess']){
                     <li><a href="#ContactUS">Contact</a></li>
                     <li class='buttons'>
                         <form action="" method='POST'>
-                            <button type="submit" name='Login' onclick="<?php if(isset($_POST['login'])){header('Location: http://localhost/museum-website/login.php');}?>">
+                            <button type="submit" name='login' onclick="<?php if(isset($_POST['login'])){header('Location: http://localhost/museum-website/login.php');}?>">
                                 login 
                             </button>
-                            <button type="submit" name="Sign" onclick="<?php if(isset($_POST['sign'])){header('Location: http://localhost/museum-website/risgster.php');}?>">
+                            <button type="submit" name="sign" onclick="<?php if(isset($_POST['sign'])){header('Location: http://localhost/museum-website/risgster.php');}?>">
                                 sign up
                             </button>
                         </form>
@@ -175,7 +175,7 @@ if($_SESSION['adminAccess']){
                 </div>
                 <div class="box contact">
                     <h2>ONLINE INQUIRY</h2>
-                    <form action="inquires.php" method="POST">
+                    <form action="php/inquires.php" method="POST">
                         <input type="text" name="name" id="" placeholder="Name" required>
                         <input type="email" name="email" id="" placeholder="E-mail" required>
                         <input type="tel" name="phone" id="" placeholder="Phone" required>
@@ -211,6 +211,6 @@ if($_SESSION['adminAccess']){
                  Policy</a></span></p>
         </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

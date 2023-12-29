@@ -1,5 +1,5 @@
 <?php
-require_once('D:\XAMPP\TCPDF-main\TCPDF-main\tcpdf.php');
+require_once('../TCPDF-main/tcpdf.php');
 
 function generateReport()
 {
